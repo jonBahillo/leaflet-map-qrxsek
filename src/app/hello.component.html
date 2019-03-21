@@ -1,0 +1,6 @@
+<h1>Hello {{name}}!</h1>
+<i class="fa fa-bicycle" aria-hidden="true"></i>   
+
+<div class='map' style="height: 500px;" leaflet [leafletOptions]="options" [leafletLayersControl]="layersControl"
+[leafletLayers]="layers" (leafletClick)='clicked($event)' (leafletMapReady)='onMapReady($event)'>
+</div>
